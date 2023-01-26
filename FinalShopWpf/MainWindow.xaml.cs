@@ -17,7 +17,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using CloudIpspSDK;
 using CloudIpspSDK.Checkout;
-
+using System.IO;
 
 namespace FinalShopWpf
 {
@@ -125,6 +125,7 @@ namespace FinalShopWpf
 
 		private void Exit_Click(object sender, RoutedEventArgs e)
 		{
+            File.Delete("user.xml");
             authorization goTo = new authorization();
             goTo.Show();
             Hide();

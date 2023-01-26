@@ -156,20 +156,14 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Author.xaml.cs">
-      <DependentUpon>Author.xaml</DependentUpon>
-    </Compile>
     <Compile Include="authorization.xaml.cs">
       <DependentUpon>authorization.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Model\AuthUser.cs" />
     <Compile Include="Model\Users.cs" />
     <Compile Include="Register.xaml.cs">
       <DependentUpon>Register.xaml</DependentUpon>
     </Compile>
-    <Page Include="Author.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="authorization.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
