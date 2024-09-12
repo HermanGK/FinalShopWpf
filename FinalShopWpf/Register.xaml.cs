@@ -48,17 +48,17 @@ namespace FinalShopWpf
             string email = UserEmail.Text.Trim();
             if (login.Equals("") && login.Length < 3)
             {
-                MessageBox.Show("Короткий логин");
+                MessageBox.Show("Short login");
                 return;
             }
             if(password.Length < 3)
             {
-                MessageBox.Show("Короткий пароль");
+                MessageBox.Show("Short password");
                 return;
             }
             if(email.Length < 3) 
             {
-                MessageBox.Show("Короткий email");
+                MessageBox.Show("Short email");
                 return;
             }
             else if (email.Contains("@") )
@@ -67,7 +67,7 @@ namespace FinalShopWpf
             }
             else
             {
-                MessageBox.Show("Еmail должен содержать @");
+                MessageBox.Show("Еmail must @");
                 return;
             }
 
@@ -77,7 +77,7 @@ namespace FinalShopWpf
             UserLogin.Text = "";
             UserEmail.Text = "";
             UserPassword.Password = "";
-            UserRegister.Content = "Готово";
+            UserRegister.Content = "Ready";
         }
 		private string Hash(string input)
 		{

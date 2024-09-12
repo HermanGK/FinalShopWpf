@@ -12,11 +12,11 @@ Title="MainPage" Height="450" Width="800" WindowStartupLocation="CenterScreen">
 
     <StackPanel>
 
-        <Label Content="Авторизация" HorizontalAlignment="Center" Margin="0,40,0,20" VerticalAlignment="Top" Foreground="White" FontSize="40" FontWeight="Bold"/>
-        <TextBox Style="{StaticResource MaterialDesignFloatingHintTextBox}" HorizontalAlignment="Center" Margin="0,10,0,5" TextWrapping="Wrap" Foreground="White" x:Name="UserLoginInside" materialDesign:HintAssist.Hint="Введдите логин" Width="178"/>
-        <PasswordBox Style="{StaticResource MaterialDesignFloatingHintPasswordBox}" Margin="0,10,0,25" HorizontalAlignment="Center" Foreground="White" Width="178" x:Name="UserPasswordInside" materialDesign:HintAssist.Hint="Введдите пароль"/>
-        <Button Content="Войти" x:Name="InsideBtn" HorizontalAlignment="Center" Margin="0,0,0,15" VerticalAlignment="Top" Click="InsideBtn_Click"  />
-        <Button x:Name="GoToRegBtn"  Background="Transparent" Content="Зарегистрироваться " HorizontalAlignment="Center" Margin="0,10,0,15" VerticalAlignment="Top" Click="GoToRegBtn_Click" />
+        <Label Content="Autorisation" HorizontalAlignment="Center" Margin="0,40,0,20" VerticalAlignment="Top" Foreground="White" FontSize="40" FontWeight="Bold"/>
+        <TextBox Style="{StaticResource MaterialDesignFloatingHintTextBox}" HorizontalAlignment="Center" Margin="0,10,0,5" TextWrapping="Wrap" Foreground="White" x:Name="UserLoginInside" materialDesign:HintAssist.Hint="Log in" Width="178"/>
+        <PasswordBox Style="{StaticResource MaterialDesignFloatingHintPasswordBox}" Margin="0,10,0,25" HorizontalAlignment="Center" Foreground="White" Width="178" x:Name="UserPasswordInside" materialDesign:HintAssist.Hint="Password"/>
+        <Button Content="Sign in" x:Name="InsideBtn" HorizontalAlignment="Center" Margin="0,0,0,15" VerticalAlignment="Top" Click="InsideBtn_Click"  />
+        <Button x:Name="GoToRegBtn"  Background="Transparent" Content="Register " HorizontalAlignment="Center" Margin="0,10,0,15" VerticalAlignment="Top" Click="GoToRegBtn_Click" />
 
     </StackPanel>
 

@@ -48,7 +48,7 @@ namespace FinalShopWpf
 			}
 			if (aut == null)
 			{
-				MessageBox.Show("У вас нет аккаунта зарегестрируйтесь");
+				MessageBox.Show("You dont have account");
 				goToReg();
 			}
 			else
@@ -59,7 +59,7 @@ namespace FinalShopWpf
 				{
 					xml.Serialize(file,user);
 				}
-				MessageBox.Show("Вы вошли");
+				MessageBox.Show("You in");
 				goToMain();
 			}
 

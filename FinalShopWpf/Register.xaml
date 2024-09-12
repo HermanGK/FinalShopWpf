@@ -12,12 +12,12 @@ Title="MainPage" Height="450" Width="800" WindowStartupLocation="CenterScreen">
     
     <StackPanel>
         
-        <Label Content="Регистрация" HorizontalAlignment="Center" Margin="0,40,0,20" VerticalAlignment="Top" Foreground="White" FontSize="40" FontWeight="Bold"/>
-        <TextBox Style="{StaticResource MaterialDesignFloatingHintTextBox}" HorizontalAlignment="Center" Margin="0,10,0,5" TextWrapping="Wrap" Foreground="White" x:Name="UserEmail" materialDesign:HintAssist.Hint="Введдите email" Width="178"/>
-        <TextBox Style="{StaticResource MaterialDesignFloatingHintTextBox}" HorizontalAlignment="Center" Margin="0,10,0,5" TextWrapping="Wrap" Foreground="White" x:Name="UserLogin" materialDesign:HintAssist.Hint="Введдите логин" Width="178"/>
-        <PasswordBox Style="{StaticResource MaterialDesignFloatingHintPasswordBox}" Margin="0,10,0,25" HorizontalAlignment="Center" Foreground="White" Width="178" x:Name="UserPassword" materialDesign:HintAssist.Hint="Введдите пароль"/>
-        <Button x:Name="UserRegister" Content="Зарегистрироваться " HorizontalAlignment="Center" Margin="0,10,0,15" VerticalAlignment="Top" Click="UserRegister_Click"/>
-        <Button Content="Назад" Background="Transparent" x:Name="BackBtn" HorizontalAlignment="Center" Margin="0,0,0,15" VerticalAlignment="Top" Click="BackBtn_Click" />
+        <Label Content="Registration" HorizontalAlignment="Center" Margin="0,40,0,20" VerticalAlignment="Top" Foreground="White" FontSize="40" FontWeight="Bold"/>
+        <TextBox Style="{StaticResource MaterialDesignFloatingHintTextBox}" HorizontalAlignment="Center" Margin="0,10,0,5" TextWrapping="Wrap" Foreground="White" x:Name="UserEmail" materialDesign:HintAssist.Hint="Email" Width="178"/>
+        <TextBox Style="{StaticResource MaterialDesignFloatingHintTextBox}" HorizontalAlignment="Center" Margin="0,10,0,5" TextWrapping="Wrap" Foreground="White" x:Name="UserLogin" materialDesign:HintAssist.Hint="Login" Width="178"/>
+        <PasswordBox Style="{StaticResource MaterialDesignFloatingHintPasswordBox}" Margin="0,10,0,25" HorizontalAlignment="Center" Foreground="White" Width="178" x:Name="UserPassword" materialDesign:HintAssist.Hint="Password"/>
+        <Button x:Name="UserRegister" Content="Register " HorizontalAlignment="Center" Margin="0,10,0,15" VerticalAlignment="Top" Click="UserRegister_Click"/>
+        <Button Content="Back" Background="Transparent" x:Name="BackBtn" HorizontalAlignment="Center" Margin="0,0,0,15" VerticalAlignment="Top" Click="BackBtn_Click" />
         
 
     </StackPanel>

@@ -66,7 +66,7 @@ namespace FinalShopWpf
                     foreach(var el in summ)
                     {
                         total = summ.Sum();
-                        PriceLable.Content = $"Цена товаров в корзине: {total}$";
+                        PriceLable.Content = $"Price : {total}$";
                     } 
                     
                     
@@ -84,7 +84,7 @@ namespace FinalShopWpf
                 {
                     count.Add(item.Id);
                     _count = count.Count();
-                    CountLable.Content = $"Товаров в корзине: {_count} шт!";
+                    CountLable.Content = $"product in basket: {_count} шт!";
 
                 }
             }
@@ -93,7 +93,7 @@ namespace FinalShopWpf
 
         private void ClearBtn_Click(object sender, RoutedEventArgs e)
         {
-            PriceLable.Content = "Корзина пуста!";
+            PriceLable.Content = "Empty basket!";
             CountLable.Content = "";
             count.Clear(); 
             summ.Clear();
@@ -101,7 +101,7 @@ namespace FinalShopWpf
 
         private void ReadyBtn_Click(object sender, RoutedEventArgs e)
         {
-            if ((string)PriceLable.Content != "Корзина пуста!")
+            if ((string)PriceLable.Content != "Empty basket!")
             {
                 Config.MerchantId = 1396424;
                 Config.SecretKey = "test";
@@ -120,7 +120,7 @@ namespace FinalShopWpf
                     System.Diagnostics.Process.Start(url);
                 }
             }
-            else MessageBox.Show("В корзине пусто!");
+            else MessageBox.Show("Empty basket!");
         }
 
 		private void Exit_Click(object sender, RoutedEventArgs e)
